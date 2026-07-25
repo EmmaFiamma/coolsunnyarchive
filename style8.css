@@ -850,3 +850,410 @@ footer {
 
 
 }
+
+/* =====================================================
+   PROJECT PAGE
+   visual archive layout
+===================================================== */
+
+
+.project-page {
+
+    padding-top:40px;
+
+}
+
+
+/* ------------------------------
+   PROJECT INTRO
+------------------------------ */
+
+
+.project-intro {
+
+    max-width:900px;
+
+    margin-bottom:100px;
+
+}
+
+
+.project-intro h1 {
+
+    font-size:110px;
+
+    font-weight:400;
+
+    letter-spacing:-.06em;
+
+    line-height:.85;
+
+    margin:35px 0;
+
+}
+
+
+
+.lead {
+
+    font-size:34px;
+
+    max-width:700px;
+
+    line-height:1.25;
+
+    color:#3f4549;
+
+}
+
+
+
+.project-tags {
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-top:45px;
+
+    font-family:var(--mono);
+
+    font-size:12px;
+
+    color:var(--grey);
+
+}
+
+
+
+.project-tags span::before {
+
+    content:"#";
+
+    color:var(--blue);
+
+}
+
+
+
+
+
+/* ------------------------------
+   HERO IMAGE
+------------------------------ */
+
+
+.hero-image {
+
+    width:100%;
+
+    margin:80px 0 140px;
+
+}
+
+
+
+.hero-image img {
+
+    width:100%;
+
+    max-height:850px;
+
+    object-fit:cover;
+
+    display:block;
+
+    filter:saturate(.92);
+
+}
+
+
+
+
+
+/* ------------------------------
+   DESCRIPTION
+------------------------------ */
+
+
+.description {
+
+    display:grid;
+
+    grid-template-columns:
+
+    1fr 280px;
+
+    gap:100px;
+
+    margin-bottom:160px;
+
+}
+
+
+
+.description h2 {
+
+    font-size:36px;
+
+    font-weight:400;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.description p {
+
+    max-width:600px;
+
+}
+
+
+
+.little-note {
+
+    font-family:var(--mono);
+
+    font-size:12px;
+
+    line-height:2;
+
+    color:var(--grey);
+
+    padding-top:20px;
+
+}
+
+
+
+
+
+
+
+/* ------------------------------
+   GALLERY
+------------------------------ */
+
+
+.gallery {
+
+    display:grid;
+
+    grid-template-columns:
+
+    1.4fr .8fr;
+
+    gap:70px 50px;
+
+    align-items:start;
+
+    margin-bottom:180px;
+
+}
+
+
+
+.gallery figure {
+
+    margin:0;
+
+}
+
+
+
+.gallery figure.large {
+
+    grid-column:1 / -1;
+
+}
+
+
+
+.gallery img {
+
+    width:100%;
+
+    display:block;
+
+    background:#edf2f5;
+
+    transition:.5s ease;
+
+}
+
+
+
+.gallery img:hover {
+
+    transform:translateY(-8px);
+
+}
+
+
+
+
+
+figcaption {
+
+    margin-top:15px;
+
+    font-family:var(--mono);
+
+    font-size:11px;
+
+    color:var(--grey);
+
+}
+
+
+
+
+
+/* ------------------------------
+   PROCESS / FRAGMENTS
+------------------------------ */
+
+
+.process {
+
+    border-top:1px solid var(--line);
+
+    padding-top:50px;
+
+    margin-bottom:180px;
+
+}
+
+
+
+.process h2 {
+
+    font-size:40px;
+
+    font-weight:400;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.fragments {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+
+
+.fragments p {
+
+    border:1px solid var(--line);
+
+    padding:12px 20px;
+
+    font-family:var(--mono);
+
+    font-size:12px;
+
+    background:rgba(255,255,255,.3);
+
+}
+
+
+
+
+
+/* ------------------------------
+   END
+------------------------------ */
+
+
+.end {
+
+    text-align:center;
+
+    margin:180px auto;
+
+    font-size:30px;
+
+}
+
+
+
+.end a {
+
+    display:inline-block;
+
+    margin-top:40px;
+
+    font-family:var(--mono);
+
+    font-size:13px;
+
+    color:var(--blue);
+
+}
+
+
+
+
+
+/* ------------------------------
+   PROJECT MOBILE
+------------------------------ */
+
+
+@media(max-width:900px){
+
+
+.project-intro h1 {
+
+    font-size:70px;
+
+}
+
+
+.lead {
+
+    font-size:25px;
+
+}
+
+
+
+.description {
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+}
+
+
+
+.gallery {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.gallery figure.large {
+
+    grid-column:auto;
+
+}
+
+
+}
+
