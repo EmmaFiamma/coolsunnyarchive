@@ -1,0 +1,899 @@
+/* =====================================================
+
+   SUNLIT ARCHIVE
+   style9.css
+
+   visual portfolio /
+   personal web /
+   image archive
+
+===================================================== */
+
+
+:root {
+
+    --paper: #f7f8f5;
+    --ink: #17191c;
+    --grey: #687078;
+
+    --line: #d8dfe4;
+
+    --blue: #86b5d9;
+    --blue-light: #e2f0f8;
+
+    --lavender: #ddd8ee;
+
+    --serif: "EB Garamond", serif;
+    --sans: "Inter", sans-serif;
+    --mono: "IBM Plex Mono", monospace;
+
+    --width: 1320px;
+
+}
+
+
+
+
+/* ==========================
+RESET
+========================== */
+
+
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+html {
+
+    scroll-behavior:smooth;
+
+}
+
+
+body {
+
+    background:var(--paper);
+
+    color:var(--ink);
+
+    font-family:var(--serif);
+
+    font-size:20px;
+
+    line-height:1.6;
+
+    overflow-x:hidden;
+
+}
+
+
+
+
+
+/* ==========================
+ATMOSPHERE
+========================== */
+
+
+.sun-glow {
+
+
+    position:fixed;
+
+    width:700px;
+    height:700px;
+
+    top:-250px;
+    right:-200px;
+
+
+    background:
+
+    radial-gradient(
+        circle,
+        rgba(155,205,240,.35),
+        transparent 70%
+    );
+
+
+    filter:blur(35px);
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+
+
+
+
+
+/* ==========================
+LINKS
+========================== */
+
+
+a {
+
+    text-decoration:none;
+
+    color:inherit;
+
+    transition:.3s ease;
+
+}
+
+
+a:hover {
+
+    color:#6695bc;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+HEADER
+========================== */
+
+
+.header {
+
+
+    max-width:var(--width);
+
+    margin:auto;
+
+    padding:80px 60px 120px;
+
+
+    display:grid;
+
+    grid-template-columns:1fr 200px;
+
+
+}
+
+
+
+.symbol {
+
+
+    color:var(--blue);
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.brand h1 {
+
+
+    font-size:105px;
+
+    font-weight:400;
+
+    letter-spacing:-.08em;
+
+    line-height:.8;
+
+}
+
+
+
+.brand p {
+
+
+    font-family:var(--mono);
+
+    font-size:12px;
+
+    color:var(--grey);
+
+    text-transform:uppercase;
+
+    letter-spacing:.14em;
+
+    margin-top:35px;
+
+}
+
+
+
+
+nav {
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+    padding-top:25px;
+
+
+}
+
+
+nav a {
+
+
+    font-family:var(--mono);
+
+    font-size:13px;
+
+}
+
+
+
+nav a:hover {
+
+    transform:translateX(8px);
+
+}
+
+
+
+
+
+
+/* ==========================
+MAIN
+========================== */
+
+
+main {
+
+
+    max-width:var(--width);
+
+    margin:auto;
+
+    padding:0 60px 150px;
+
+
+}
+
+
+
+
+
+/* ==========================
+OPENING
+========================== */
+
+
+.opening {
+
+
+    max-width:850px;
+
+    margin-bottom:180px;
+
+}
+
+
+
+.small {
+
+
+    font-family:var(--mono);
+
+    font-size:12px;
+
+    color:var(--grey);
+
+    letter-spacing:.15em;
+
+    margin-bottom:45px;
+
+
+}
+
+
+
+.opening h2 {
+
+
+    font-size:90px;
+
+    font-weight:400;
+
+    letter-spacing:-.06em;
+
+    line-height:.95;
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+.opening p:not(.small) {
+
+
+    max-width:600px;
+
+    color:#464c51;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+FEATURED PROJECT
+========================== */
+
+
+.featured {
+
+
+    display:grid;
+
+    grid-template-columns:1.4fr .8fr;
+
+    gap:80px;
+
+    align-items:center;
+
+    margin-bottom:220px;
+
+
+}
+
+
+
+
+.featured-image {
+
+
+    position:relative;
+
+}
+
+
+
+.featured-image::before {
+
+
+    content:"";
+
+    position:absolute;
+
+    inset:-30px;
+
+    background:var(--blue-light);
+
+    filter:blur(35px);
+
+    z-index:-1;
+
+}
+
+
+
+.featured-image img {
+
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+
+
+
+.featured-text {
+
+
+    transform:translateY(30px);
+
+}
+
+
+
+.number {
+
+
+    font-family:var(--mono);
+
+    font-size:12px;
+
+    color:var(--grey);
+
+    letter-spacing:.15em;
+
+}
+
+
+
+.featured-text h3 {
+
+
+    font-size:70px;
+
+    font-weight:400;
+
+    letter-spacing:-.05em;
+
+    margin:25px 0;
+
+
+}
+
+
+
+.featured-text p {
+
+
+    color:#454a4e;
+
+}
+
+
+
+
+
+.tags {
+
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin:30px 0;
+
+    font-family:var(--mono);
+
+    font-size:12px;
+
+    color:#66727c;
+
+}
+
+
+
+.tags span::before {
+
+
+    content:"#";
+
+    color:var(--blue);
+
+}
+
+
+
+.featured-text a {
+
+
+    font-family:var(--mono);
+
+    font-size:13px;
+
+    color:#668cab;
+
+}
+
+
+
+
+
+
+/* ==========================
+PROJECT LIST
+========================== */
+
+
+.section-header {
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    border-bottom:1px solid var(--line);
+
+    padding-bottom:20px;
+
+    margin-bottom:70px;
+
+
+}
+
+
+
+.section-header h3 {
+
+
+    font-size:36px;
+
+    font-weight:400;
+
+}
+
+
+
+.section-header p {
+
+
+    font-family:var(--mono);
+
+    font-size:12px;
+
+    color:var(--grey);
+
+}
+
+
+
+
+
+.project {
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    1fr 350px 80px;
+
+
+    gap:70px;
+
+    align-items:center;
+
+    padding:90px 0;
+
+    border-bottom:1px solid var(--line);
+
+}
+
+
+
+
+
+.project-image {
+
+
+    position:relative;
+
+}
+
+
+
+.project-image img {
+
+
+    width:100%;
+
+    display:block;
+
+    transition:.5s ease;
+
+}
+
+
+
+.project-image:hover img {
+
+
+    transform:translateY(-12px);
+
+}
+
+
+
+
+
+.project-info span {
+
+
+    font-family:var(--mono);
+
+    color:var(--blue);
+
+    font-size:12px;
+
+
+}
+
+
+
+.project-info h4 {
+
+
+    font-size:55px;
+
+    font-weight:400;
+
+    letter-spacing:-.05em;
+
+    margin:15px 0;
+
+
+}
+
+
+
+.project-info p {
+
+
+    font-family:var(--mono);
+
+    font-size:12px;
+
+    color:var(--grey);
+
+}
+
+
+
+.year {
+
+
+    font-family:var(--mono);
+
+    font-size:12px;
+
+    color:var(--grey);
+
+}
+
+
+
+/* petite anomalie volontaire */
+
+
+.project.reversed .project-image {
+
+
+    transform:translateY(35px);
+
+}
+
+
+
+
+
+
+
+/* ==========================
+TRACES
+========================== */
+
+
+.traces {
+
+
+    margin-top:180px;
+
+    border-top:1px solid var(--line);
+
+    padding-top:40px;
+
+
+}
+
+
+
+.trace-title {
+
+
+    font-family:var(--mono);
+
+    text-transform:uppercase;
+
+    letter-spacing:.15em;
+
+    font-size:12px;
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+.trace-grid {
+
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.trace-grid p {
+
+
+    color:#4b5155;
+
+}
+
+
+
+
+
+
+/* ==========================
+ENDING
+========================== */
+
+
+.ending {
+
+
+    margin:220px auto 100px;
+
+    max-width:650px;
+
+    text-align:center;
+
+
+}
+
+
+
+.ending p:first-child {
+
+
+    font-size:45px;
+
+    font-style:italic;
+
+}
+
+
+
+.ending p:last-child {
+
+
+    margin-top:25px;
+
+    color:var(--grey);
+
+}
+
+
+
+
+
+
+/* ==========================
+FOOTER
+========================== */
+
+
+footer {
+
+
+    max-width:var(--width);
+
+    margin:auto;
+
+    padding:40px 60px;
+
+    border-top:1px solid var(--line);
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+
+    font-family:var(--mono);
+
+    font-size:12px;
+
+    color:var(--grey);
+
+
+}
+
+
+
+
+
+
+/* ==========================
+MOBILE
+========================== */
+
+
+@media(max-width:900px){
+
+
+.header {
+
+    grid-template-columns:1fr;
+
+}
+
+
+.brand h1 {
+
+    font-size:65px;
+
+}
+
+
+.opening h2 {
+
+    font-size:55px;
+
+}
+
+
+.featured {
+
+
+    grid-template-columns:1fr;
+
+}
+
+
+.project {
+
+
+    grid-template-columns:1fr;
+
+    gap:35px;
+
+}
+
+
+.project.reversed .project-image {
+
+    transform:none;
+
+}
+
+
+
+.trace-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+footer {
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+}
