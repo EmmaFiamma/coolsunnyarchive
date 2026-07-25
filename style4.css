@@ -610,5 +610,72 @@ h1 {
 
 }
 
+   
+
 
 }
+
+
+/* ========================= */
+/* PAGE4 - ARCHIVE ENTRY     */
+/* ========================= */
+
+.work-page .back {
+    font-family:"IBM Plex Mono", monospace;
+    font-size:13px;
+    color:#6e8491;
+    text-decoration:none;
+}
+
+.work-header {
+    margin-top:70px;
+    margin-bottom:80px;
+}
+
+.work-header h2 {
+    font-family:"EB Garamond", serif;
+    font-weight:400;
+    font-size:70px;
+}
+
+.work-meta {
+    display:flex;
+    gap:20px;
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12px;
+}
+
+.main-image {
+    max-width:850px;
+    margin:auto;
+}
+
+.main-image img {
+    width:100%;
+    display:block;
+}
+
+.description {
+    max-width:650px;
+    margin:100px auto;
+    font-family:"EB Garamond", serif;
+    font-size:25px;
+    line-height:1.65;
+}
+
+.quote {
+    font-size:36px;
+    font-style:italic;
+}
+
+.archive-information {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+}
+
+.related {
+    margin-top:120px;
+}
+
+
